@@ -10,22 +10,33 @@
                   referrerpolicy="no-referrer">
 </script>
  </head>           
-<div style="margin-right: 20%;margin-left: 20%;">
-	<div>
-		<button id="metamask" class="button28">Connect to MetaMask</button>
-		<button id="accountbutton" class="button49" >Account Information</button>
-	</div>
-	<div>
-			<div id="status1" class="status" style="color: red">disconnected	</div>
-  			<div id="status2" style="color: Blue">	</div>
-	<div>
-	<div>
-		<form>
-      		<label  for="amountinput">Amount (between 0.001 and 0.5):</label>
-  			<input type="number" id="amountinput" step="0.001"  min="0.001" max="0.5" value="0.001" style="width: auto"</input>
-        	<button type="button" id="sendButton" class="button64">Buy PIYE Now</button>
-		</form>
-    </div>
+	<div class="card ">
+ <div class="card-header">
+  <div class="row">
+     <div class="col-sm-2"><button id="metamask" >Connect</button></div>
+   <div id="status1" class="col-sm-4">Status: disconnected</div>
+   <div class="col-sm-2"><button id="accountbutton">Acct Info</button></div>
+   <div id="status2" class="col-sm-4">Account Information: Null</div>
+</div>	
+</div>
+<div class="card-body">
+  <div class="row">
+    <div class="col-sm-6">
+      <p><kbd>25 BNB</kbd> Softcap</p>
+      <p><kbd>100 BNB</kbd> Hardcap</p>
+      <p><kbd>0.001 BNB</kbd> Mini spend per account</p></div>
+  <div class="col-sm-6 ">
+     <p><kbd>0.5 BNB</kbd> Max spend per account</p>
+     <p><kbd>900000 PIYE</kbd>  per BNB Presale price</p>
+     <p><kbd>600000 PIYE</kbd>  per BNB Listing price</p></div>
+  </div>
+</div>
+<div class="card-footer ">
+<form class="d-flex justify-content-center">
+<input type="number" id="amountinput" step="0.001"  min="0.001" max="0.5" value="0.001" style="width:200px"</input>
+<button type="button" id="sendButton" class="button64">Buy PIYE Now</button>
+</form>
+</div>
 </div>
 <script>
 const web3 = new Web3(window.ethereum);
